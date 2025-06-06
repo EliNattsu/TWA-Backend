@@ -1,0 +1,1 @@
+package cz.catparadiseprojekt.catparadisehotel.service;
