@@ -31,3 +31,27 @@ INSERT INTO cat (name, age, breed, owner_id) VALUES
                                                  ('Jack', 3, 'Devon Rex', 9),
                                                  ('Nala', 4, 'Oriental', 10),
                                                  ('Oliver', 2, 'Exotická krátkosrstá', 10);
+
+INSERT INTO room (room_number, capacity, price_per_night, description, room_type) VALUES
+                                                                                      ('101', 2, 500.0, 'Pokoj pro kočku - standard', 'ProKockuSTANDART'),
+                                                                                      ('102', 2, 600.0, 'Pokoj pro kočku - deluxe', 'ProKockuDELUXE'),
+                                                                                      ('103', 1, 800.0, 'Pokoj pro kočku - suite', 'ProKockuSUITE'),
+                                                                                      ('201', 2, 700.0, 'Pokoj pro kočku a majitele - standard', 'ProKockuAMajiteleSTANDART'),
+                                                                                      ('202', 2, 900.0, 'Pokoj pro kočku a majitele - deluxe', 'ProKockuAMajiteleDELUX'),
+                                                                                      ('203', 1, 1200.0, 'Pokoj pro kočku a majitele - suite', 'ProKockuAMajiteleSUITE'),
+                                                                                      ('104', 3, 550.0, 'Velký pokoj pro více koček', 'ProKockuSTANDART'),
+                                                                                      ('204', 2, 950.0, 'Pokoj pro kočku a majitele s balkonem', 'ProKockuAMajiteleDELUX'),
+                                                                                      ('105', 1, 850.0, 'Pokoj pro kočku - suite s výhledem', 'ProKockuSUITE'),
+                                                                                      ('205', 2, 1250.0, 'Luxusní pokoj pro kočku a majitele', 'ProKockuAMajiteleSUITE');
+
+INSERT INTO reservation (cat_id, room_id, start_date, end_date, status, reference_number) VALUES
+                                                                                              (1, 1, '2025-07-01', '2025-07-10', 'PENDING', 'RES-0001'),
+                                                                                              (2, 2, '2025-07-05', '2025-07-12', 'CONFIRMED', 'RES-0002'),
+                                                                                              (3, 3, '2025-08-01', '2025-08-08', 'COMPLETED', 'RES-0003'),
+                                                                                              (4, 4, '2025-08-10', '2025-08-15', 'CANCELLED', 'RES-0004'),
+                                                                                              (5, 5, '2025-09-01', '2025-09-10', 'PENDING', 'RES-0005'),
+                                                                                              (6, 6, '2025-09-12', '2025-09-20', 'CONFIRMED', 'RES-0006'),
+                                                                                              (7, 7, '2025-10-01', '2025-10-05', 'COMPLETED', 'RES-0007'),
+                                                                                              (8, 8, '2025-10-10', '2025-10-15', 'PENDING', 'RES-0008'),
+                                                                                              (9, 9, '2025-11-01', '2025-11-07', 'CONFIRMED', 'RES-0009'),
+                                                                                              (10, 10, '2025-11-10', '2025-11-17', 'PENDING', 'RES-0010');
