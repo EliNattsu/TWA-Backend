@@ -38,7 +38,7 @@ public class CatService {
         catRepository.deleteById(id);
     }
 
-    // Vlastní metoda: výpis koček podle majitele
+    // výpis koček podle majitele
     public List<Cat> getCatsByOwner(CatOwner owner) {
         return catRepository.findByOwner(owner);
     }

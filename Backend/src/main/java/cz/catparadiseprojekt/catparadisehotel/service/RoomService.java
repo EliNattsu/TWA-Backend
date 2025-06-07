@@ -50,7 +50,6 @@ public class RoomService {
         room.setPricePerNight(updatedRoom.getPricePerNight());
         room.setDescription(updatedRoom.getDescription());
         room.setRoomType(updatedRoom.getRoomType());
-
         return roomRepository.save(room);
     }
 }
