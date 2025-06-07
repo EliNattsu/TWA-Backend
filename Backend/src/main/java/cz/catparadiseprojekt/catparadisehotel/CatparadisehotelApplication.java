@@ -13,7 +13,6 @@ public class CatparadisehotelApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CatparadisehotelApplication.class, args);
 
-
 		User admin = new User(1L, "admin@email.cz", "tajneheslo", UserRole.ADMIN);
 		User recepce = new User(2L, "recepce@email.cz", "recepceheslo", UserRole.RECEPCNI);
 		User pecovatel = new User(3L, "pecovatel@email.cz", "pecovatelheslo", UserRole.PECOVATEL);
