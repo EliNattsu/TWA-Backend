@@ -2,6 +2,7 @@ package cz.catparadiseprojekt.catparadisehotel.controller;
 
 import cz.catparadiseprojekt.catparadisehotel.model.Room;
 import cz.catparadiseprojekt.catparadisehotel.model.RoomType;
+import cz.catparadiseprojekt.catparadisehotel.service.ReservationService;
 import cz.catparadiseprojekt.catparadisehotel.service.RoomService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -12,10 +13,12 @@ import java.util.Optional;
 @RequestMapping("/api/rooms")
 public class RoomController {
     private final RoomService roomService;
+    private final ReservationService reservationService;
 
     @Autowired
-    public RoomController(RoomService roomService) {
+    public RoomController(RoomService roomService,  ReservationService reservationService) {
         this.roomService = roomService;
+        this.reservationService = reservationService;
     }
 
     @PostMapping
@@ -44,7 +47,7 @@ public class RoomController {
     }
 
     @DeleteMapping("/{id}")
-    public void deleteRoom(@PathVariable Long id) {
-        roomService.deleteRoom(id);
+    public void deleteReservation(@PathVariable Long id) {
+        reservationService.deleteReservation(id);
     }
 }
