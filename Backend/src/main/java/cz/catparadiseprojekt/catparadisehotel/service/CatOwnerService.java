@@ -18,6 +18,10 @@ public class CatOwnerService {
         this.catOwnerRepository = catOwnerRepository;
     }
 
+    public boolean existsById(Long ownerId) {
+        return catOwnerRepository.existsById(ownerId);
+    }
+
     // Uložení nového majitele
     public CatOwner saveCatOwner(CatOwner catOwner) {
         return catOwnerRepository.save(catOwner);

@@ -1,0 +1,33 @@
+INSERT INTO cat_owner (name, email, password, phone) VALUES
+                                                         ('Anna Nováková', 'anna.novakova@email.cz', 'heslo123', '777111222'),
+                                                         ('Petr Svoboda', 'petr.svoboda@email.cz', 'petrheslo', '606222333'),
+                                                         ('Eva Králová', 'eva.kralova@email.cz', 'evahack', '603333444'),
+                                                         ('Jan Dvořák', 'jan.dvorak@email.cz', 'dvorakjan', '777444555'),
+                                                         ('Lucie Černá', 'lucie.cerna@email.cz', 'cernalu', '602555666'),
+                                                         ('Tomáš Malý', 'tomas.maly@email.cz', 'mamradykočky', '608666777'),
+                                                         ('Karolína Veselá', 'karolina.vesela@email.cz', 'veselak', '777777888'),
+                                                         ('Marek Horák', 'marek.horak@email.cz', 'horakm', '606888999'),
+                                                         ('Jana Zelená', 'jana.zelena@email.cz', 'zelenej', '603999000'),
+                                                         ('Ondřej Pokorný', 'ondrej.pokorny@email.cz', 'pokorny123', '777000111');
+
+INSERT INTO cat (name, age, breed, owner_id) VALUES
+                                                 ('Micka', 3, 'Siamská', 1),
+                                                 ('Oscar', 5, 'Perská', 1),
+                                                 ('Luna', 2, 'Mainská mývalí', 2),
+                                                 ('Max', 4, 'Britská krátkosrstá', 2),
+                                                 ('Bella', 1, 'Ragdoll', 3),
+                                                 ('Charlie', 6, 'Bengálská', 3),
+                                                 ('Lucy', 2, 'Sphynx', 4),
+                                                 ('Leo', 3, 'Sibiřská', 4),
+                                                 ('Mia', 4, 'Birma', 5),
+                                                 ('Simba', 5, 'Savannah', 5),
+                                                 ('Tiger', 1, 'Evropská krátkosrstá', 6),
+                                                 ('Coco', 2, 'Norvegská lesní', 6),
+                                                 ('Smokey', 3, 'Egyptská mau', 7),
+                                                 ('Lily', 4, 'Ruská modrá', 7),
+                                                 ('Milo', 2, 'Bombajská', 8),
+                                                 ('Zoe', 5, 'Habešská', 8),
+                                                 ('Chloe', 1, 'Scottish Fold', 9),
+                                                 ('Jack', 3, 'Devon Rex', 9),
+                                                 ('Nala', 4, 'Oriental', 10),
+                                                 ('Oliver', 2, 'Exotická krátkosrstá', 10);

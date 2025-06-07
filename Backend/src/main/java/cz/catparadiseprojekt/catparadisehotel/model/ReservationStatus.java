@@ -1,4 +1,8 @@
 package cz.catparadiseprojekt.catparadisehotel.model;
 
-public class ReservationStatus {
+public enum ReservationStatus {
+    PENDING,
+    CONFIRMED,
+    CANCELLED,
+    COMPLETED
 }
