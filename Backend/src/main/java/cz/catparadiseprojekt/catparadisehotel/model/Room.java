@@ -10,7 +10,6 @@ public class Room {
 
     @Column(unique = true) // číslo pokoje musí být unikátní
     private String roomNumber;
-
     private Integer capacity; // maximální počet koček v pokoji
     private Double pricePerNight;
     private String description;
