@@ -2,7 +2,6 @@ package cz.catparadiseprojekt.catparadisehotel.service;
 
 import cz.catparadiseprojekt.catparadisehotel.model.Cat;
 import cz.catparadiseprojekt.catparadisehotel.model.CatOwner;
-import cz.catparadiseprojekt.catparadisehotel.repository.CatOwnerRepository;
 import cz.catparadiseprojekt.catparadisehotel.repository.CatRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

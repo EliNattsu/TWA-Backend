@@ -40,11 +40,6 @@ public class RoomService {
         return roomRepository.findById(id);
     }
 
-    // Smazání pokoje
-    public void deleteRoom(Long id) {
-        roomRepository.deleteById(id);
-    }
-
     // Aktualizace pokoje
     public Room updateRoom(Long id, Room updatedRoom) {
         Room room = roomRepository.findById(id)

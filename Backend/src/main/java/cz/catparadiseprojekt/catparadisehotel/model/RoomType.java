@@ -1,10 +1,10 @@
 package cz.catparadiseprojekt.catparadisehotel.model;
 
 public enum RoomType {
-    PROKOCKUSTANDART,
-    PROKOCKUDELUXE,
-    PROKOCKUSUITE,
-    PROKOCKUAMAJITELESTANDART,
-    PROKOCKUAMAJITELEDELUX,
-    PROKOCKUAMAJITELESUITE
+    ProKockuSTANDART,
+    ProKockuDELUXE,
+    ProKockuSUITE,
+    ProKockuAMajiteleSTANDART,
+    ProKockuAMajiteleDELUX,
+    ProKockuAMajiteleSUITE
 }
